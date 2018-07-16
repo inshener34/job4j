@@ -7,32 +7,32 @@
     <name>junior</name>
     <url>http://job4j.ru/</url>
 
-     <properties>
-         <maven.compiler.source>1.8</maven.compiler.source>
-         <maven.compiler.target>1.8</maven.compiler.target>
-         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-     </properties>
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 
-     <modules>
+    <modules>
         <module>chapter_001</module>
-     </modules>
-
-     <dependencies>
-       <dependency>
+    </modules>
+	
+	<dependencies>
+      <dependency>
         <groupId>org.hamcrest</groupId>
         <artifactId>hamcrest-all</artifactId>
         <version>1.3</version>
         <scope>test</scope>
-       </dependency>
-       <dependency>
+      </dependency>
+      <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
         <version>4.12</version>
         <scope>test</scope>
-        </dependency>
-     </dependencies>
+      </dependency>
+    </dependencies>
 
-     <build>
+    <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -62,5 +62,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>

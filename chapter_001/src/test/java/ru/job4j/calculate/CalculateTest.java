@@ -1,27 +1,42 @@
 package ru.job4j.calculate;
 
 import org.junit.Test;
+
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
-/**
-* Test.
-*
-* @author Alexandr Mukonin (mailto:inshener34@mail.ru)
-* @version $Id$
-* @since 0.1
-*/
 public class CalculateTest {
-/**
-* Test echo.
-*/ @Test
-public void whenTakeNameThenTreeEchoPlusName() {
-    String input = "Alexandr Mukonin";
-    String expect = "Echo, echo, echo : Alexandr Mukonin"; 
-    Calculate calc = new Calculate();
-    String result = calc.echo(input);
-    assertThat(result, is(expect));
-}
- 
+    @Test
+    public void whenAddOnePlusOneThenTwo() {
+        Calculate calc = new Calculate();
+        calc.add(1D, 1D);
+        double result = calc.getResult();
+        double expected = 2D;
+        assertThat(result, is(expected));
+    }
+    @Test
+    public void whenTwoSubtractOneThenOne() {
+        Calculate calc = new Calculate();
+        calc.subtract(2D, 1D);
+        double result = calc.getResult();
+        double expected = 1D;
+        assertThat(result, is(expected));
+    }
+    @Test
+    public void whenTwoDivOneThenTwo() {
+        Calculate calc = new Calculate();
+        calc.div(2D, 1D);
+        double result = calc.getResult();
+        double expected = 2D;
+        assertThat(result, is(expected));
+    }
+    @Test
+    public void whenTwoMultipleOneThenTwo() {
+        Calculate calc = new Calculate();
+        calc.multiple(2D, 1D);
+        double result = calc.getResult();
+        double expected = 2D;
+        assertThat(result, is(expected));
+    }
 }
  

@@ -34,6 +34,6 @@ public class ConverterTest {
     public void when120RubleToEuroThen1() {
         Converter converter = new Converter();
         int result = converter.rubleToEuro(120);
-        assertThat(result, is(1.72));
+        assertThat(result, is(1));
     }
 }

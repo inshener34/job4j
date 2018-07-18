@@ -25,9 +25,15 @@ public class ConverterTest {
         assertThat(result, is(60));
     }
     @Test
-    public void when1EuroToRubleThen1() {
+    public void when1EuroToRubleThen70() {
         Converter converter = new Converter();
         int result = converter.rubleToEuro(1);
         assertThat(result, is(70));
+    }
+    @Test
+    public void when120RubleToEuroThen1() {
+        Converter converter = new Converter();
+        int result = converter.rubleToEuro(120);
+        assertThat(result, is(1.72));
     }
 }

@@ -1,4 +1,4 @@
-package ru.job4j.Converter;
+package ru.job4j.converter;
 
 /**
  * Конвертор валюты.

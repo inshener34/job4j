@@ -8,7 +8,7 @@ import static org.junit.Assert.assertThat;
 public class CalculatoraTest {
     @Test
     public void whenAddOnePlusOneThenTwo() {
-        Сalculatora calc = new Сalculatora();
+        Calculatora calc = new Calculatora();
         calc.add(1D, 1D);
         double result = calc.getResult();
         double expected = 2D;

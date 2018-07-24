@@ -24,8 +24,8 @@ public class Triangle {
         return rsl;
     }
     private boolean exist(double ab, double ac, double bc) {
-        return false;
-    }
+        return ab+bc>ac && ac+bc>ab && ab+ac>bc;
+        }
 }
 
 

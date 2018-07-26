@@ -2,8 +2,11 @@ package ru.job4j.loop;
 
 public class Counter {
     public int add(int start, int finish) {
-        int add = 1;
-        for (int i = 0; i <= 10; i -= 2) {
+        int add = 0;
+        for (int i = start; i <= finish; i++) {
+            if (i % 2 == 0) {
+                continue;
+            }
             add += i;
         }
         return add;

@@ -1,7 +1,7 @@
 package ru.job4j.dop;
 
 public class Dop2 {
-    public int[] sort(int[] array) {
+    public void merge(int[] left, int[] right) {
         int[] a = {};
         int[] b = {};
         int[] c = new int[a.length + b.length];
@@ -21,6 +21,5 @@ public class Dop2 {
                 c[i + 1] = t;
             }
         }
-        return array;
     }
 }

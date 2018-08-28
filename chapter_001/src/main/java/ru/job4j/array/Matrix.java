@@ -1,5 +1,7 @@
 package ru.job4j.array;
 
+// Двухмерный массив. Таблица умножения
+
 public class Matrix {
     public int[][] multiple(int size) {
         int[][] table = new int[size][size];

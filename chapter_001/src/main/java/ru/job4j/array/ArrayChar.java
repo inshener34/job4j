@@ -1,5 +1,7 @@
 package ru.job4j.array;
 
+// Слово начинается с ...
+
 public class ArrayChar {
     private char[] data;
 

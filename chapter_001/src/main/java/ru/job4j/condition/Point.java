@@ -4,6 +4,7 @@ package ru.job4j.condition;
  * @autor Alexandr Mukonin (inshener34@mail.ru)
  * @version $Id$
  * since 0.1
+ * Расстояние между точками в системе координат
  */
 
 public class Point {

@@ -1,5 +1,7 @@
 package ru.job4j.calculatora;
 
+// простые программы по сложению. вычитанию. умножению и делению
+
 public class Calculatora {
     private double result;
     public void add(double first, double second) {

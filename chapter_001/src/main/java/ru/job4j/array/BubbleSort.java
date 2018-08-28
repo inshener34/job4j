@@ -1,5 +1,7 @@
 package ru.job4j.array;
 
+// сортировка массива методом перестановки
+
 public class BubbleSort {
     public int[] sort(int[] array) {
         for (int i = array.length - 1; i > 0; i--) {

@@ -1,5 +1,7 @@
 package ru.job4j.array;
 
+// Перевернуть массив
+
 public class Turn {
     public int[] turn(int[] array) {
         for (int i = 0; i < array.length / 2; i++) {

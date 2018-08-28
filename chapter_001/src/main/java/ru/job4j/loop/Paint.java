@@ -1,5 +1,7 @@
 package ru.job4j.loop;
 
+// Построить пирамиду в псевдографике
+
 import java.util.function.BiPredicate;
 
 public class Paint {

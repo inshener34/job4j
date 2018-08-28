@@ -1,6 +1,8 @@
 package ru.job4j.array;
 import java.util.Arrays;
 
+// Удаление дубликатов в массиве.
+
 public class ArrayDuplicate {
     public String[] remove(String[] array) {
         int uniq = array.length;

@@ -1,5 +1,7 @@
 package ru.job4j.loop;
 
+// Построить шахматную доску в псевдографике
+
 public class Board {
     public String paint(int width, int height) {
         StringBuilder screen = new StringBuilder();

@@ -1,5 +1,7 @@
 package ru.job4j.array;
 
+// Заполнить массив степенями чисел
+
 public class Square {
     public int[] calculatora(int bound) {
         int[] rst = new int[bound];

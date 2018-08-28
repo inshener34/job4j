@@ -1,5 +1,7 @@
 package ru.job4j.condition;
 
+// Вычисление площади треугольника
+
 public class Triangle {
     private Point a;
     private Point b;

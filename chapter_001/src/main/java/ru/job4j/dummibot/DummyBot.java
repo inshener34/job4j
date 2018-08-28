@@ -5,6 +5,7 @@ public class DummyBot {
      * Отвечает на вопросы.
      * @param question Вопрос клиента.
      * @return Ответ.
+     * Глупый бот
      */
     public String answer(String question) {
         DummyBot bot = new DummyBot();

@@ -1,5 +1,7 @@
 package ru.job4j.array;
 
+// Классический поиск перебором
+
 public class FindLoop {
     public int indexOf(int[] data, int el) {
         int rst = -1;

@@ -1,25 +1,35 @@
 package ru.job4j.dop;
 
 public class Dop2 {
-    public void merge(int[] left, int[] right) {
-        int[] a = {};
-        int[] b = {};
-        int[] c = new int[a.length + b.length];
-        for (int i = 0; i < c.length / 2; i++) {
-            if (a[i] > b[i]) {
-                c[i + i] = b[i];
-                c[i + i + 1] = a[i];
+    public static int[] merge(int[] first, int[] second) {
+        int[] result = new int[first.length + second.length];
+        int fstIndex = 0;
+        int sndIndex = 0;
+        int index = 0;
+
+        while (fstIndex < first.length && sndIndex < second.length) {
+
+            if (first[fstIndex] < second[sndIndex]) {
+                result[index] = first[fstIndex];
+                fstIndex++;
             } else {
-                c[i + i] = a[i];
-                c[i + i + 1] = b[i];
+                result[index] = second[sndIndex];
+                sndIndex++;
             }
+            index++;
         }
-        for (int i = 0; i < c.length - 1; i++) {
-            int t = c[i];
-            if (c[i] > c[i + 1]) {
-                c[i] = c[i + 1];
-                c[i + 1] = t;
-            }
+
+        while (fstIndex < first.length) {
+            result[index] = first[fstIndex];
+            fstIndex++;
+            index++;
         }
+
+        while (sndIndex < second.length) {
+            result[index] = second[sndIndex];
+            sndIndex++;
+            index++;
+        }
+        return result;
     }
 }
